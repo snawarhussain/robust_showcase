@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Your Project Description">
+  <meta name="keywords" content="your, project, keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROBUST: Rodent Observable Behavior Understanding and Study Toolkit</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ROBUST: Rodent Observable Behavior Understanding and Study Toolkit</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="www.snawarhussain.com">Snawar Hussain</a>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="Link to your paper"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="Link to your video"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="Link to your code"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop height="100%">
+        <source src="./assets/overview.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        A toolkit for Unsupervised Behavior Analysis of Rats using self-supervised Variational Autoencoder (VAE) based representation learning and Hidden Markov Model (HMM) clustering.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <p>The GUI Tool for Unsupervised Behavior Analysis is an innovative application designed to transform the way researchers understand and analyze animal behavior, specifically focusing on rats. It seamlessly integrates cutting-edge machine learning models with intuitive user interfaces to provide comprehensive behavioral insights.</p>
+
+<p><strong>Background</strong>: With the exponential growth in video data, traditional manual analysis of animal behavior becomes time-consuming and is subject to human biases. Automated tools, especially when built on machine learning foundations, offer rapid, unbiased, and deeper insights into animal behavior.</p>
+
+<p><strong>Core Functionality</strong>:</p>
+<ol>
+  <li><strong>2D Pose Estimation</strong>: Utilizing state-of-the-art DeepLabCut2.3 for rat video processing, the tool estimates 2D poses of rats, providing key data points about their position and movements.</li>
+  <li><strong>Motion Dynamics Learning</strong>: A deep learning approach involving Recurrent Neural Network and Variational Autoencoder (RNN-VAE) is employed. This combination aids in the learning of latent representations (𝑍) of the motion dynamics across the video sequences.</li>
+  <li><strong>Behavioral Segmentation and Clustering</strong>: The learned latent representations serve as the foundation for unsupervised clustering techniques. This facilitates the segmentation of different behaviors exhibited in the video sequences. The visual representation of these behaviors is further enhanced by the UMAP visualization of the latent space.</li>
+  <li><strong>Video Action Segmentation</strong>: Leveraging the clusters formed, the tool breaks down the video into segments, each labeled based on the detected behavior. This offers a timeline-based understanding of behavioral patterns.</li>
+</ol>
+
+<p><strong>Technical Specifications</strong>:</p>
+<ul>
+  <li><strong>Dependencies</strong>: DeepLabCut2.3 for pose estimation and VAME for behavioral segmentation.</li>
+  <li><strong>Model Architecture</strong>: A combination of RNN and VAE for motion dynamics learning.</li>
+  <li><strong>Clustering and Visualization</strong>: Utilizes UMAP for reducing dimensions and visualizing high-dimensional latent spaces, offering clear clusters of behavior.</li>
+</ul>
+
+<p><strong>Limitations & Future Directions</strong>: While the tool has achieved significant milestones in automating behavior analysis, it currently operates on 2D pose estimation. Future iterations may benefit from the integration of 3D pose estimation for richer data and insights. Additionally, newer and state-of-the-art VAE models can be explored to further enhance latent space learning and representation. Features such as post-hoc analysis for advanced visualizations, generation of synthetic neural data based on motion patterns, and other cutting-edge behavioral metrics can be incorporated in subsequent versions.</p>
+
+<p>This work stands at the intersection of behavioral science and AI, offering researchers a powerful and automated solution to unlock complex behavioral patterns in lab animal videos.</p>
+          </p>
+
+          <img src="./assets/usage2.png" width="1000" height="700" />
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract -->
+
+    <!-- Paper video -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="./assets/method.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video -->  
+    
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{YourBibTeX:2023,
+      title     = {Your Project Title},
+      author    = {Your Name},
+      booktitle = {Your Conference},
+      year      = {2023}
+    }
+    </code></pre>
+  </div>
+</section> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
