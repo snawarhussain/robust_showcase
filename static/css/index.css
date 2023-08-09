@@ -155,3 +155,15 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.zoomable-gif {
+  max-width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoomable-gif:hover {
+  transform: scale(1.5); /* Adjust the scale factor as needed */
+  cursor: zoom-out;
+}
